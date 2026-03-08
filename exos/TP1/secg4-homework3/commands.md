@@ -50,8 +50,8 @@ cp be_ea_cert.pem ../pubrepo/"${FPR}.pem"
 ROLL=49441
 
 cat > ${ROLL}.txt <<EOF
-Monis
-Lucas
+MONIS
+LUCAS
 ${ROLL}
 BE
 Haute Ecole Bruxelles-Brabant
@@ -86,7 +86,7 @@ openssl x509 -in ../private/be_ea_cert.pem -noout -fingerprint -sha1 \
 setup:
 ```bash
 # cwd: /
-cp be_education_authority/tmp/12345.{signature,dscfingerprint}.txt he2b_school/tmp/
+cp be_education_authority/tmp/49441.{signature,dscfingerprint}.txt he2b_school/tmp/
 ```
 
 ## Actor: HE2B School
